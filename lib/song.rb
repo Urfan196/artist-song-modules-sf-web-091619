@@ -10,7 +10,7 @@ include Memorable::InstanceMethods
   attr_accessor :name
   attr_reader :artist
 
-  @@songs = []
+  @@all = []
 
 
   def self.find_by_name(name)
@@ -18,7 +18,7 @@ include Memorable::InstanceMethods
   end
 
   def self.all
-    @@songs
+    @@all
   end
 
   def artist=(artist)
